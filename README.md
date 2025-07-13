@@ -3,7 +3,7 @@
 This is a React + Vite + TypeScript + Tailwind CSS project deployed on GitHub Pages.
 
 🔗 **Live Demo:**  
-👉 [https://gorkemgoktepeli.github.io/artu/](https://gorkemgoktepeli.github.io/artu/)
+👉 [https://gorkemgktpl.github.io/artu/](https://gorkemgktpl.github.io/artu/)
 
 ## Features
 
