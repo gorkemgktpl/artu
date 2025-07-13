@@ -2,6 +2,7 @@ import useMediaQuery from '@/hooks/useMediaQuery'
 import { SelectedPage } from '@/shared/types';
 import { motion } from 'framer-motion';
 import React from 'react'
+import contactImage from "/src/assets/photos/contact.jpg" ;
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
@@ -26,7 +27,7 @@ function Contact({setSelectedPage}: Props) {
         
         <div className='w-full h-full bg-black bg-opacity-70'>
             <img 
-              src="/src/assets/photos/contact.jpg" 
+              src={contactImage}
               alt="forest" 
               className="w-full h-full object-cover scale-100 opacity-80"
             />

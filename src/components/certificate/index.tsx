@@ -1,5 +1,6 @@
 import useMediaQuery from '@/hooks/useMediaQuery'
 import React from 'react'
+import certificatePhoto from "/src/assets/photos/forest2.jpg" 
 
 type Props = {}
 
@@ -17,7 +18,7 @@ function Certificate({}: Props) {
     `}>
         <div className='w-full h-full'>
             <img 
-              src="/src/assets/photos/forest2.jpg" 
+              src={certificatePhoto}
               alt="forest" 
               className="w-full h-full object-cover scale-150 opacity-90"
             />

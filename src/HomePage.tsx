@@ -8,6 +8,7 @@ import Home from './components/home'
 import Contact from './components/contact'
 import { useLocation } from "react-router-dom";
 import { content } from "@/content/content";
+import forest from "/src/assets/photos/forest.jpg";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -33,7 +34,7 @@ function HomePage({ setSelectedPage }: Props) {
   return (
     <div>
       <Home id = 'anasayfa' 
-      image='/src/assets/photos/forest.jpg' 
+      image={forest}
       title = {content.homePageTitle} setSelectedPage={setSelectedPage} />
       <About setSelectedPage={setSelectedPage} />
       <Certificate />

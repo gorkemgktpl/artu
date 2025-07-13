@@ -5,6 +5,7 @@ import HiggTextComponent from './components/higgAbout';
 import { content, femPurpose, femFields , beforeStarting} from "@/content/content";
 import HiggRowComponent from './components/higgAbout/index1';
 import HiggImageRowComponent from './components/higgAbout/index2';
+import higgForest from '/src/assets/photos/forest3.jpg';
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
@@ -21,7 +22,7 @@ const Higg = ({ setSelectedPage }: Props) => {
         <div>
             <Home 
             id='HiggIndex'
-            image='/src/assets/photos/forest3.jpg'
+            image={higgForest}
             title='Higg Index Nedir?' setSelectedPage={setSelectedPage}/>
             <HiggTextComponent title={content.whatIsHiggTitle} description={content.whatIsHiggDescription}/>
             <HiggTextComponent title={content.whatIsHiggFEMTitle} description= {content.whatIsHiggFEMDescription}/>

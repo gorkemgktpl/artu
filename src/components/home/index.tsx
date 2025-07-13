@@ -2,6 +2,7 @@ import { SelectedPage } from '@/shared/types'
 import React from 'react'
 import useMediaQuery from '@/hooks/useMediaQuery'
 import { motion } from "framer-motion"
+import downArrow from '/src/assets/icons/down-arrow.png'
 
 type Props = {
     id? : string;
@@ -70,7 +71,7 @@ function Home({ title, id, image,  setSelectedPage }: Props) {
                 className="absolute bottom-5"
             >
                 <img 
-                    src="/src/assets/icons/down-arrow.png" 
+                    src={downArrow}
                     alt="Down Arrow" 
                     className={`
                         ${isAboveMediumScreens ? 'w-12 h-12' : 

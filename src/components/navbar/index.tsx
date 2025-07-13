@@ -4,6 +4,7 @@ import Link from './Link'
 import Home from '@/components/home'
 import { SelectedPage } from '@/shared/types'
 import useMediaQuery from '@/hooks/useMediaQuery'
+import artuLogo from "/src/assets/icons/artulogo-2.png";
 
 
 type Props = {
@@ -47,7 +48,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
         <div className={`${navbarBackground} ${flexbetween} fixed top-0 z-30 w-full transition-transform duration-300 ease-in-out ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
             <div className={`${flexbetween} mx-auto w-5/6 z-30 py-2`}>
                 <div className={`${flexbetween} w-full gap-10`}>
-                    <img className='w-14 h-auto' src="/src/assets/icons/artulogo-2.png" alt="Logo" />
+                    <img className='w-14 h-auto' src={artuLogo} alt="Logo" />
                     {isAboveMediumScreen ?
                     <div className={`flex items-center justify-end w-full`}>
                         <div className={`flex items-center gap-6 text-base`}>
