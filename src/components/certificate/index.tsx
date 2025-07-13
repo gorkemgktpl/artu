@@ -1,6 +1,7 @@
 import useMediaQuery from '@/hooks/useMediaQuery'
 import React from 'react'
 import certificatePhoto from "/src/assets/photos/forest2.jpg" 
+import document from "/public/Artu_Cevre_Yeterlilik.pdf"
 
 type Props = {}
 
@@ -35,7 +36,7 @@ function Certificate({}: Props) {
             </h1>
             <div className="flex justify-center">
               <button 
-              onClick={() => window.open("/public/Artu_Cevre_Yeterlilik.pdf", "_blank")}
+              onClick={() => window.open(document, "_blank")}
               className={`
                 hover:bg-white text-white hover:text-black border border-white
                 transition duration-300 rounded-full text-center
